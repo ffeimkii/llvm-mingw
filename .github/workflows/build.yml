@@ -6,6 +6,10 @@ on:
   push:
     tags:
     - 'v*'
+    
+  watch:
+    types: [started]
+
 jobs:
   # For scheduled builds, get the commit ids of the latest versions to build.
   #

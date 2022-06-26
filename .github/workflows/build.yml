@@ -1,5 +1,8 @@
 name: Builds
-on:
+
+on: 
+  release:
+    types: [published]
   push:
     tags:
     - 'v*'

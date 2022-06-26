@@ -163,7 +163,7 @@ jobs:
   # build should be as fast as normal releases (with the intent that the first
   # stage compiler should build enough code to find many regressions).
   linux-cross:
-    if: (github.event_name != 'schedule') || (github.repository == 'mstorsjo/llvm-mingw')
+    if: (github.event_name != 'schedule') || (github.repository == 'ffeimkii/llvm-mingw')
     needs: [linux]
     runs-on: ubuntu-latest
     strategy:
